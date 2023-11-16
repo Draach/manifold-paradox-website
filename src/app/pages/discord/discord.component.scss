@@ -3,4 +3,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .logo-container {
+        width: 80%;
+        height: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media(min-width:720px) {
+    .discord-page {
+        .logo-container {
+            height: 100%;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
