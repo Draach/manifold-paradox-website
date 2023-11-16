@@ -1,5 +1,16 @@
-<div class="main-logo">
-    <picture>
-        <img src="./../assets/logo-no-background.png">
-    </picture>
+<div class="landing-page">
+    <div class="video-player">
+        <video #myVideo autoplay muted loop [class.hidden]="!readyToDisplay">
+            <source [src]="videoUrl" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="main-logo">
+            <picture class="logo-container">
+                <img src="./../assets/logo-no-background.png">
+            </picture>
+            <picture class="slogan-container">
+                <img src="./../../../assets/guild-slogan.png">
+            </picture>
+        </div>
+    </div>
 </div>

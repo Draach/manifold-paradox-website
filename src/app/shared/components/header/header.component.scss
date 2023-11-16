@@ -1,9 +1,11 @@
 .header {
-    height: 6vh;
+    top: 0;
+    z-index: -1;
+    height: 7vh;
     width: 100vw;
-    background-color: red;
-    background-image: url(./../../../../assets/background-textures/black-concrete-wall-texture.jpg);
-    background-size: cover;
+    background-image: url(./../../../../assets/background-textures/header_texture.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 2fr 8fr 2fr;
 
@@ -18,9 +20,12 @@
             list-style: none;
             padding: 0;
             display: flex;
+            justify-content: center;
+            width: 100%;
 
             li {
                 margin-right: 10px;
+                padding: 0 5%;
             }
         }
     }

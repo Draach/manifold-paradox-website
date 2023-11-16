@@ -10,6 +10,7 @@ import { DiscordComponent } from './pages/discord/discord.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { InfoComponent } from './pages/info/info.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavigationButtonComponent,
     DiscordComponent,
     LandingComponent,
-    InfoComponent
+    InfoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

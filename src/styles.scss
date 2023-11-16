@@ -1,9 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import url(./assets/fonts/TL-regular.css);
 body {
     margin: 0;
     padding: 0;
     background-image: url("./assets/background-textures/black-concrete-wall-texture.jpg");
+    overflow: hidden;
+    font-family: 'TL header RUS';
 }
 
 main {
