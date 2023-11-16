@@ -28,3 +28,7 @@ jobs:
       - name: Build Production Release
         run: |
           npm run build -- --configuration=production
+
+      - name: Print job status
+        run: |
+          echo "🍏 This job's status is ${{ job.status }}."
