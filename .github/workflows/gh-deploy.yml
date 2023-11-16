@@ -28,6 +28,10 @@ jobs:
       - name: Build Angular App
         run: npm run build -- --configuration=production
 
+      - name: Debug Build Directory
+        run: |
+          ls -R ./dist/manifold-paradox-website
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
@@ -42,3 +46,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/manifold-paradox-website
           commit_message: "Deploy from GitHub Actions"
+
+      - name: Debug Deployed Files
+        run: |
+          git ls-tree -r --name-only gh-pages
