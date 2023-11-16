@@ -24,6 +24,15 @@ jobs:
         run: |
           npm run build -- --output-path docs --base-href /manifold-paradox-website/
 
+      - name: Commit and Push Changes to GitHub Pages
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          git add docs
+          git commit -m "Deploy to GitHub Pages"
+          git push
+
       - name: Print job status
         run: |
           echo "🍏 This job's status is ${{ job.status }}."
