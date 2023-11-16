@@ -9,7 +9,7 @@ export class LandingComponent {
   @ViewChild('myVideo') myVideo!: ElementRef;
 
   readyToDisplay: boolean = false;
-  videoUrl: string = './../assets/header_video.mp4';
+  videoUrl: string = 'https://res.cloudinary.com/daxhopqbg/video/upload/v1700105121/manifold-paradox/header_video_niv01i.mp4';
 
   ngAfterViewInit() {
     setTimeout(() => {
