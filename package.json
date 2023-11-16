@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "gh-deploy": "ng build --output-path docs --base-href /manifold-paradox-website/"
+    "gh-build": "ng build --configuration=production --base-href /manifold-paradox-website/"
   },
   "private": true,
   "dependencies": {

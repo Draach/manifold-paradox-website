@@ -26,7 +26,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular App
-        run: npm run build -- --configuration=production
+        run: npm run gh-build -- --configuration=production
 
       - name: Debug Build Directory
         run: |
@@ -39,10 +39,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-
-      - name: Ensure gh-pages branch exists
-        run: |
-          git show-ref --verify --quiet refs/heads/gh-pages || git checkout -b gh-pages
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
