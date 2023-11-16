@@ -31,7 +31,7 @@ jobs:
       - name: Debug Build Directory
         run: |
           ls -R ./dist
-          ls -R /home/runner/work/manifold-paradox-website/manifold-paradox-website/dist
+          ls -R $HOME
 
   deploy:
     runs-on: ubuntu-latest
@@ -45,4 +45,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: ./dist
+          folder: dist
