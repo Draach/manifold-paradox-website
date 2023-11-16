@@ -40,6 +40,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - name: Create Target Branch
+        run: |
+          git branch your-desired-branch
+          git checkout your-desired-branch
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
