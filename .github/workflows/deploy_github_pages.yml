@@ -25,6 +25,8 @@ jobs:
           npm run build -- --output-path docs --base-href /manifold-paradox-website/
 
       - name: Commit and Push Changes to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
