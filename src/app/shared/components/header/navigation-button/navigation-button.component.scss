@@ -8,14 +8,14 @@
     transition: text-shadow 0.5s ease;
 }
 
-@media(min-width:1280px){
-    .navigation-button{
+@media screen and (min-width: 1024px) {
+    .navigation-button {
         font-size: 1rem;
     }
 }
 
-@media(min-width:1920px){
-    .navigation-button{
+@media screen and (min-width: 1280px) {
+    .navigation-button {
         font-size: 1.5rem;
     }
 }

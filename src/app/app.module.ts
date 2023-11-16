@@ -11,6 +11,7 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { InfoComponent } from './pages/info/info.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './shared/components/footer/footer.component';
     DiscordComponent,
     LandingComponent,
     InfoComponent,
-    FooterComponent
+    FooterComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

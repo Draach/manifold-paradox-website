@@ -1,5 +1,6 @@
 .landing-page {
     position: relative;
+    height: 100%;
 
     .video-player {
         height: 100%;
@@ -40,13 +41,30 @@
     }
 }
 
-@media(min-width:1280px) {
+@media screen and (min-width: 768px) {
     .landing-page {
+        position: relative;
         height: 100%;
 
-        .main-logo {
+        .video-player {
+            height: 100%;
+            width: auto;
+            display: flex;
             justify-content: center;
+            overflow: hidden;
+        }
+
+        .main-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
             align-items: center;
+            width: 80%;
+            height: 100%;
 
             .logo-container {
                 height: 70%;

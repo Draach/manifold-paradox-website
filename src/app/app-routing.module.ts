@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './pages/landing/landing.component';
 import { DiscordComponent } from './pages/discord/discord.component';
 import { InfoComponent } from './pages/info/info.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'discord',
     component: DiscordComponent,
+  },
+  {
+    path: '**',
+    component: NotFoundComponent
   }
 ];
 
