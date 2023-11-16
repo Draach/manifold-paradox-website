@@ -16,8 +16,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-        with:
-          ref: gh-pages  # Check out the gh-pages branch
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -42,10 +40,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Create Target Branch
+      - name: Ensure gh-pages branch exists
         run: |
-          git branch your-desired-branch
-          git checkout your-desired-branch
+          git show-ref --verify --quiet refs/heads/gh-pages || git checkout -b gh-pages
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
