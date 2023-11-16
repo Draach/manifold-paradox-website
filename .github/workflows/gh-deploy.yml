@@ -31,7 +31,6 @@ jobs:
       - name: Debug Build Directory
         run: |
           ls -R ./dist
-          ls -R $HOME
 
   deploy:
     runs-on: ubuntu-latest
@@ -40,6 +39,10 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+
+      - name: Debug Build Directory
+        run: |
+          ls -R ./dist
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
