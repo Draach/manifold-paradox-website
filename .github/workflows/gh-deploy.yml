@@ -30,7 +30,7 @@ jobs:
 
       - name: Debug Build Directory
         run: |
-          ls -R ./dist/manifold-paradox-website
+          ls -R ./dist
 
   deploy:
     runs-on: ubuntu-latest
