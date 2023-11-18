@@ -14,20 +14,7 @@ export default class LandingComponent {
   public readyToDisplay: boolean = false;
 
   ngAfterViewInit() {
-    setTimeout(() => {
-      this.readyToDisplay = false;
-      const savedTime = localStorage.getItem('videoCurrentTime');
-      const video: HTMLVideoElement = this.myVideo.nativeElement;
-      if (savedTime) {
-        video.currentTime = parseFloat(savedTime);
-      }
-      video.muted = true;
-      this.readyToDisplay = true;
-    }, 0);
-  }
-
-  onTimeUpdate(): void {
-    let currentTime = this.myVideo.nativeElement.currentTime;
-    localStorage.setItem('videoCurrentTime', currentTime.toString());
+    const video: HTMLVideoElement = this.myVideo.nativeElement;
+    video.muted = true;
   }
 }
