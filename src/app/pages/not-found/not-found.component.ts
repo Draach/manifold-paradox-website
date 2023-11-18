@@ -2,10 +2,11 @@ import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-not-found',
+  standalone: true,
   templateUrl: './not-found.component.html',
   styleUrls: ['./not-found.component.scss']
 })
-export class NotFoundComponent {
+export default class NotFoundComponent {
   imageUrl: string = "https://res.cloudinary.com/daxhopqbg/image/upload/v1700149255/manifold-paradox/notfound_horizontal_spanish_gdgrjo.png";
   @HostListener('window:resize', ['$event'])
 
