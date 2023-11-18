@@ -5,7 +5,7 @@ export const fadeInOutAnimation = trigger('fadeInOutAnimation', [
         query(':enter, :leave',
             style({
                 // TODO: Achieve smooth transitions without displacing the ui.
-                // position: 'absolute', width: '100%',
+                position: 'absolute', height: '84.75vh', width: '100vw'
             }), { optional: true }
         ),
         group([
