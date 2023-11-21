@@ -1,32 +1,22 @@
 .discord-page {
     height: 84.7vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
-    .logo-container {
+    .discord-invitation {
         width: 80%;
-        height: auto;
-
-        img {
-            width: 100%;
-        }
     }
 }
 
 @media screen and (min-width:1200px) {
     .discord-page {
-        .logo-container {
-            height: 50%;
-            width: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        display: flex;
+        flex-direction: column;
 
-            img {
-                height: 100%;
-                width: auto;
-            }
+        .discord-invitation {
+            width: auto;
         }
     }
 }
