@@ -29,38 +29,3 @@
         }
     }
 }
-
-// @media(min-width: 720px) {
-//     .header {
-//         top: 0;
-//         z-index: -1;
-//         height: 7vh;
-//         width: 100vw;
-//         background-image: url(./../../../../assets/background-textures/header_texture.jpg);
-//         background-size: 100% 100%;
-//         background-repeat: no-repeat;
-//         display: grid;
-//         grid-template-columns: 2fr 8fr 2fr;
-
-//         nav {
-//             grid-column: 2;
-//             width: 100%;
-//             height: 100%;
-//             display: flex;
-//             justify-content: center;
-
-//             ul {
-//                 list-style: none;
-//                 padding: 0;
-//                 display: flex;
-//                 justify-content: center;
-//                 width: 100%;
-
-//                 li {
-//                     margin-right: 10px;
-//                     padding: 0 5%;
-//                 }
-//             }
-//         }
-//     }
-// }

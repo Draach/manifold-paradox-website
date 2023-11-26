@@ -6,8 +6,6 @@ import { NavigationButtonComponent } from './navigation-button/navigation-button
   standalone: true,
   imports: [NavigationButtonComponent],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {
-
-}
+export class HeaderComponent {}
